@@ -1,0 +1,151 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>
+Northern Cape Bus.co
+</title>
+</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+header{
+background-color: #666;
+padding: 30px;
+text-align:center;
+font-size: 35px;
+color: white;}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.mySlides {display:none;
+width:100%;}
+button {
+    position: absolute;
+    top:50%;
+    background-color:#0a0a23;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+
+  }
+  button {
+    background-color:#0a0a23;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+	}
+</style>
+
+<body>
+<header>Northern Cape Bus.co</header>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="big-hole.jpg" style="width:100%">
+  <img class="mySlides" src="bus.jpg" style="width:100%">
+  <img class="mySlides" src="cape1.jpeg" style="width:100%">
+  <img class="mySlides" src="cape2.jpeg" style="width:100%">
+   <img class="mySlides" src="cape3.jpeg" style="width:100%">
+    <img class="mySlides" src="cape8.jpeg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+<table>
+ <tr>
+    <center><header>Route Options <br></header></center>
+  </tr>
+ 
+  <tr>
+    <th>Route Details </th>
+    <th>Price</th>
+	<th></th>
+  </tr>
+  <tr>
+    <th> </th>
+    <th><center>Flexi</th>
+	<th>Saver</center></th>
+  </tr>
+  <tr>
+    <td><pre>Kimberley (cbd) to Kuruman on route Mainliner PLT-KIM-PTA
+Depart: Fri 11 Nov 2022 02:05am ZA | Arrive: Fri 11 Nov 2022 09:30am ZA
+Notes: Direct Route</pre></td>
+    <td><input type="radio">R520</td>
+    <td><input type="radio">R420</td>
+  </tr>
+  <tr>
+    <td><pre>Kimberley (cbd) to Kuruman on route Express Mainliner CA-KIM-PTA
+Depart: Fri 11 Nov 2022 02:40am ZA | Arrive: Fri 11 Nov 2022 09:45am ZA
+Notes: Direct Route</pre></td>
+    <td><input type="radio">R639</td>
+    <td><input type="radio">R396</td>
+  </tr>
+  <tr>
+    <td><pre>Kimberley (cbd) to Kuruman on route Express Mainliner CA-KIM-PTA
+Depart: Fri 11 Nov 2022 01:40am ZA | Arrive: Fri 11 Nov 2022 09:42am ZA
+Notes: Direct Route</pre></td>
+    <td><input type="radio">R500</td>
+    <td><input type="radio">R693</td>
+  </tr>
+  <tr>
+    <td><pre>Kimberley (cbd) to Kuruman on route Express Mainliner CA-KIM-PTA
+Depart: Fri 11 Nov 2022 03:40am ZA | Arrive: Fri 11 Nov 2022 09:56am ZA
+Notes: Direct Route</pre></td>
+    <td><input type="radio">R1250</td>
+    <td><input type="radio">R653</td>
+  </tr>
+  <tr>
+    <td><pre>Kimberley (cbd) to Kuruman on route Express Mainliner CA-KIM-PTA
+Depart: Fri 11 Nov 2022 08:40am ZA | Arrive: Fri 11 Nov 2022 09:00pm ZA
+Notes: Direct Route</pre></td>
+    <td><input type="radio">R622</td>
+    <td><input type="radio">R500</td>
+  </tr>
+  <tr>
+    <td><pre>Kimberley (cbd) to Kuruman on route Express Mainliner CA-KIM-PTA
+Depart: Fri 11 Nov 2022 05:40am ZA | Arrive: Fri 11 Nov 2022 09:45am ZA
+Notes: Direct Route</pre></td>
+    <td><input type="radio">R263</td>
+    <td><input type="radio">R425</td>
+  </tr>
+</table>
+<br>
+<br>
+<center><a href="userwebpage3.html"><img src="paynow.png" height="100" width="100"></a></center>
+<br>
+<a href="BuswebsiteHome.html">Back to HomePage</a>
+
+</body>
+</html>
